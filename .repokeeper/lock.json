@@ -172,6 +172,19 @@
       }
     },
     {
+      "id": "yaml:.github/workflows/ci.yml#[\"jobs\",\"changes\"]",
+      "module": "ci",
+      "hash": "2466a89fb7d82be9933737b9edc251479ccc130f0750365b670609117bc378ef",
+      "target": {
+        "kind": "yaml",
+        "path": ".github/workflows/ci.yml",
+        "keyPath": [
+          "jobs",
+          "changes"
+        ]
+      }
+    },
+    {
       "id": "yaml:.github/workflows/ci.yml#[\"jobs\",\"commits\"]",
       "module": "ci",
       "hash": "c8980e3360652641f615888ad5c8636f246d8446b7db051914ee9126c6aaac08",
@@ -187,7 +200,7 @@
     {
       "id": "yaml:.github/workflows/ci.yml#[\"jobs\",\"ruby\"]",
       "module": "ci",
-      "hash": "268bde899b04eaa56b5fd1bbd4cbfda45d8cf7a01597aa75af266fe439c0d183",
+      "hash": "99368fc57c2a2626d6a4adcebeb30cf6dd5fff88830438c96f5f0cfa820cff93",
       "target": {
         "kind": "yaml",
         "path": ".github/workflows/ci.yml",
