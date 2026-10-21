@@ -13,18 +13,18 @@ concurrency:
   cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 jobs:
   commits:
-    uses: vannt-dev/repokeeper/.github/workflows/commitlint.yml@v0
+    uses: vannt-dev/repokeeper/.github/workflows/commitlint.yml@ci/ubuntu-26-trial
   ruby:
     needs: changes
     if: ${{ !cancelled() && needs.changes.outputs.code != 'false' }}
     uses: vannt-dev/repokeeper/.github/workflows/stack-ruby.yml@v0
     with:
       ruby-versions: '["3.3","3.4"]'
-      os: '["ubuntu-latest"]'
+      os: '["ubuntu-26.04"]'
       install-command: bundle install
       commands: '["bundle exec rake test"]'
   changes:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
     permissions:
       pull-requests: read
     outputs:
